@@ -1,87 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>EXPO 2015 - Virtual Tour</title>
-  <meta name="description" content=
-  "The platform that allows visitors to explore the Exhibition site of Expo Milano 2015 in a 3D Experience whereby visitors from around the world will get to know the contents of the Universal Exposition.">
-  <meta name="keywords" content="EXPO 2015 - Virtual Tour">
-  <link rel="image_src" href="EXPOVirtualTourdata/thumbnail.jpg">
-  <link rel="icon" href="custom/images/favicon.gif" type=
-  "image/x-icon">
-  <meta name="generator" content="Panotour Pro V2.3.1 64bits">
-  <meta name="viewport" content=
-  "target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content=
-  "default">
-  <link href="custom/css/style.css" rel="stylesheet" type=
-  "text/css">
-  <link href="custom/css/floorplan.css" rel="stylesheet" type=
-  "text/css">
-  <link href="custom/css/jquery-ui.min.css" rel="stylesheet" type=
-  "text/css"><!--
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <title>EXPO 2015 - Virtual Tour</title>
+        <meta name="description" content="The platform that allows visitors to explore the Exhibition site of Expo Milano 2015 in a 3D Experience whereby visitors from around the world will get to know the contents of the Universal Exposition.">
+        <meta name="keywords" content="EXPO 2015 - Virtual Tour">
+        <link rel="image_src" href="EXPOVirtualTourdata/thumbnail.jpg">
+        <link rel="icon" href="custom/images/favicon.gif" type="image/x-icon">
+        <meta name="generator" content="Panotour Pro V2.3.1 64bits">
+        
+        
+        
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+        <link href="custom/css/style.css" rel="stylesheet" type="text/css">
+        <link href="custom/css/floorplan.css" rel="stylesheet" type="text/css">
+        <link href="custom/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        
+        <!--
         <script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-2.0.3.min.js"></script>
         -->
-  <!--<![endif]-->
-  <!--[if lte IE 8]>
+
+        <!--<![endif]-->
+        <!--[if lte IE 8]>
         <script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-1.10.2.min.js"></script>
         <![endif]-->
-  <!--[if gt IE 8]>
+        <!--[if gt IE 8]>
         <script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-2.0.3.min.js"></script>
         <![endif]-->
-  <!--[if lt IE 10]>
+        <!--[if lt IE 10]>
         <link href="custom/css/ielt10.css" rel="stylesheet" type="text/css" />
         <![endif]-->
-  <!--[if !IE]><!-->
+        		<!--[if !IE]><!-->
+		<script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-2.1.1.min.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8]>
+		<script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-1.11.1.min.js"></script>
+		<![endif]-->
+		<!--[if gt IE 8]>
+		<script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-2.1.1.min.js"></script>
+		<![endif]-->
 
-  <script type="text/javascript" src=
-  "EXPOVirtualTourdata/lib/jquery-2.1.1.min.js"></script><!--<![endif]-->
-  <!--[if lte IE 8]>
-                <script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-1.11.1.min.js"></script>
-                <![endif]-->
-  <!--[if gt IE 8]>
-                <script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-2.1.1.min.js"></script>
-                <![endif]-->
-  <link type="text/css" href=
-  "EXPOVirtualTourdata/lib/jquery-ui-1.11.1/jquery-ui.min.css" rel=
-  "stylesheet">
-  <script type="text/javascript" src=
-  "EXPOVirtualTourdata/lib/jquery-ui-1.11.1/jquery-ui.min.js"></script>
-  <script type="text/javascript" src=
-  "EXPOVirtualTourdata/lib/jquery.ui.touch-punch.min.js"></script>
-  <script type="text/javascript" src=
-  "EXPOVirtualTourdata/lib/Kolor/KolorTools.min.js"></script>
-  <script type="text/javascript" src=
-  "EXPOVirtualTourdata/graphics/KolorBootstrap.js"></script>
-  <style type="text/css">
-                        div#panoDIV.cursorMoveMode {
-                                cursor: move;
-                                cursor: url(EXPOVirtualTourdata/graphics/cursors_move_html5.cur), move;
-                        }
-                        div#panoDIV.cursorDragMode {
-                                cursor: grab;
-                                cursor: -moz-grab;
-                                cursor: -webkit-grab;
-                                cursor: url(EXPOVirtualTourdata/graphics/cursors_drag_html5.cur), default;
-                        }
-  </style>
-  <script type="text/javascript" src=
-  "custom/js/base_functions.js"></script>
-  <script type="text/javascript" src=
-  "custom/js/interface.js"></script>
-  <script type="text/javascript" src=
-  "custom/js/iscroll.js"></script>
-  <script type="text/javascript" src=
-  "custom/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src=
-  "custom/js/jquery.fitvids.js"></script>
-  <script type="text/javascript" src=
-  "custom/js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript" src=
-  "custom/js/js.cookie.js"></script>
-  <script type="text/javascript">
+
+		<link type="text/css" href="EXPOVirtualTourdata/lib/jquery-ui-1.11.1/jquery-ui.min.css" rel="stylesheet">
+		<script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery-ui-1.11.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="EXPOVirtualTourdata/lib/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="EXPOVirtualTourdata/lib/Kolor/KolorTools.min.js"></script>
+		<script type="text/javascript" src="EXPOVirtualTourdata/graphics/KolorBootstrap.js"></script>
+
+
+		<style type="text/css">
+			div#panoDIV.cursorMoveMode {
+				cursor: move;
+				cursor: url(EXPOVirtualTourdata/graphics/cursors_move_html5.cur), move;
+			}
+			div#panoDIV.cursorDragMode {
+				cursor: grab;
+				cursor: -moz-grab;
+				cursor: -webkit-grab;
+				cursor: url(EXPOVirtualTourdata/graphics/cursors_drag_html5.cur), default;
+			}
+		</style>
+
+        
+        <script type="text/javascript" src="custom/js/base_functions.js"></script>
+        <script type="text/javascript" src="custom/js/interface.js"></script>
+        <script type="text/javascript" src="custom/js/iscroll.js"></script>
+        <script type="text/javascript" src="custom/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="custom/js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="custom/js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="custom/js/js.cookie.js"></script>
+        
+        <script type="text/javascript">
             function readDeviceOrientation() {
                 // window.innerHeight is not supported by IE
                 var winH = window.innerHeight ? window.innerHeight : jQuery(window).height();
@@ -107,8 +98,8 @@
                     readDeviceOrientation();
                 }
             });
-  </script>
-  <script>
+        </script>
+        <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -116,99 +107,91 @@
             
                 ga('create', 'UA-56466272-1', 'auto');
                 ga('send', 'pageview');
-  </script>
-</head>
-<body>
-  <div class="overlay"></div>
-  <div class="splash-container ielt10-container">
-    <img class="splash-image" src="custom/images/splash_mod.jpg">
-    <div class="ielt10-message-container">
-      <img src="custom/images/alert.png"> <span>EXPO 2015 Virtual
-      Tour is not compatible with your browser version. Update IE
-      or use another browser.</span>
-    </div>
-  </div>
-  <div class="splash-container">
-    <img class="splash-image" src="custom/images/splash_mod.jpg">
-    <div class="loading-container"><img class="loading-animation"
-    src="custom/images/loading.gif"></div>
-    <div class="skip-container">
-      SKIP »
-    </div>
-  </div>
-  <div class="loading-container extra-loader"><img class=
-  "loading-animation" src="custom/images/tour-loading.gif"></div>
-  <div class="mobile-header">
-    <img class="logo-expo" src="custom/images/tile-expo.png">
-    <div class="header-title-container"><img class="logo-cluster"
-    src=""></div>
-    <div class="search-box">
-      <img src="custom/images/icons/cerca.png" class=
-      "ui-state-default" alt=""> <input class="search">
-      <div class="language-box">
-        EN
-      </div>
-      <div class="language-selector">
-        <div class="language-it">
-          IT
+        </script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="splash-container ielt10-container">
+            <img class="splash-image" src="custom/images/splash_mod.jpg">
+            <div class="ielt10-message-container">
+                <img src="custom/images/alert.png">
+                <span>EXPO 2015 Virtual Tour is not compatible with your browser version. Update IE or use another browser.</span>
+            </div>
         </div>
-        <div class="language-en">
-          EN
+        <div class="splash-container">
+            <img class="splash-image" src="custom/images/splash_mod.jpg">
+            <div class="loading-container">
+                <img class="loading-animation" src="custom/images/loading.gif">
+            </div>
+            <div class="skip-container">SKIP �</div>
         </div>
-        <div class="language-fr">
-          FR
+        <div class="loading-container extra-loader">
+            <img class="loading-animation" src="custom/images/tour-loading.gif">
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="ambassador-container">
-    <div class="ambassador-text"></div>
-    <div class="ambassador-picture"><img src=""></div>
-    <div class="ambassador-name"></div>
-    <div class="ambassador-video"><img src=
-    "custom/images/icons/video.png"></div>
-  </div>
-  <div class="header">
-    <img class="logo-expo" src="custom/images/tile-expo.png">
-    <div class="header-title-container"><img class="logo-cluster"
-    src=""></div>
-  </div>
-  <div class="search-box">
-    <img src="custom/images/icons/cerca.png" class=
-    "ui-state-default" alt=""> <input class="search">
-    <div class="language-box">
-      EN
-    </div>
-    <div class="language-selector">
-      <div class="language-it">
-        IT
-      </div>
-      <div class="language-en">
-        EN
-      </div>
-      <div class="language-fr">
-        FR
-      </div>
-    </div>
-  </div>
-  <div class="info-div"></div>
-  <div class="description-container"></div>
-  <div class="country-info-container"></div>
-  <div class="gallery-container"></div>
-  <div class="main-menu-container"></div>
-  <div id="container">
-    <div id="tourDIV">
-      <div id="panoDIV">
-        <noscript>You must activate javascript to visualize the
-        Virtual Tour : EXPO 2015 - Virtual Tour.</noscript>
-      </div>
-      <script type="text/javascript" src=
-      "EXPOVirtualTourdata/EXPOVirtualTour.js"></script> 
-      <script type="text/javascript">
+        <div class="mobile-header">
+            <img class="logo-expo" src="custom/images/tile-expo.png">
+            <div class="header-title-container">
+                <img class="logo-cluster" src="">
+                <span class="cluster-title"></span>
+            </div>
+            <div class="search-box">
+            <img class="search-icon" src="custom/images/icons/cerca.png" alt="">
+            <input class="search">
+            <div class="language-box">EN</div>
+            <div class="language-selector">
+                <div class="language-it">IT</div>
+                <div class="language-en">EN</div>
+                <div class="language-fr">FR</div>
+            </div>
+        </div>
+        </div>
+        <div class="ambassador-container">
+            <div class="ambassador-text"> </div>
+            <div class="ambassador-picture"><img src=""></div>
+            <div class="ambassador-name"> </div>
+            <div class="ambassador-video">
+                <img src="custom/images/icons/video.png">
+            </div>
+        </div>
+        <div class="header">
+            <img class="logo-expo" src="custom/images/tile-expo.png">
+            <div class="header-title-container">
+                <img class="logo-cluster" src="">
+                <span class="cluster-title"></span>
+            </div>
+        </div>
+        <div class="search-box">
+            <img class="search-icon" src="custom/images/icons/cerca.png" alt="">
+            <input class="search">
+            <div class="language-box">EN</div>
+            <div class="language-selector">
+                <div class="language-it">IT</div>
+                <div class="language-en">EN</div>
+                <div class="language-fr">FR</div>
+            </div>
+        </div>
+        <div class="info-div"></div>
+        <div class="description-container"></div>
+        <div class="country-info-container"></div>
+        <div class="gallery-container"></div>
+        <div class="main-menu-container"></div>
+        <div id="container">
+            <div id="tourDIV">
+                <div id="panoDIV">
+                    <noscript>
+                        
+                        You must activate javascript to visualize the Virtual Tour : EXPO 2015 - Virtual Tour.
+                        
+                    </noscript>
+                </div>
+                
 
+                <script type="text/javascript" src="EXPOVirtualTourdata/EXPOVirtualTour.js"></script>
+                <script type="text/javascript">
                     embedpano({
                     
                     
+                    xml:"EXPOVirtualTourdata/EXPOVirtualTour.js"
                     
                     
                     ,target:"panoDIV"
@@ -218,18 +201,21 @@
                     
                     
                     });
-      </script>
-    </div>
-  </div>
-  <div id="panorama-menu" class="owl-carousel owl-theme"></div>
-  <!-- <div class="customNavigation">
+                </script>
+            </div>
+        </div>
+        
+        <div id="panorama-menu" class="owl-carousel owl-theme"></div>
+         
+        <!-- <div class="customNavigation">
           <a class="btn prev">Previous</a>
           <a class="btn next">Next</a>
         </div> -->
-  <link rel="stylesheet" href="custom/css/owl.theme.css">
-  <link rel="stylesheet" href="custom/css/owl.carousel.css">
-  <link rel="stylesheet" href="custom/css/jquery.bxslider.css">
-  <script src="custom/js/owl.carousel.js"></script> 
-  <!-- <div class="ds-logo-container"><img class="ds-logo" src="custom/images/ds.png" /></div> -->
-</body>
-</html>
+        
+        <link rel="stylesheet" href="custom/css/owl.theme.css">
+        <link rel="stylesheet" href="custom/css/owl.carousel.css">
+        <link rel="stylesheet" href="custom/css/jquery.bxslider.css">
+        <script src="custom/js/owl.carousel.js"></script>
+        <!-- <div class="ds-logo-container"><img class="ds-logo" src="custom/images/ds.png" /></div> -->
+    
+</body></html>
