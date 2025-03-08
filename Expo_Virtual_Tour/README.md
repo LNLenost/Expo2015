@@ -15,5 +15,4 @@ Yeah... this is not an error. They make us believe it is, though.
 
 On 07/03/2025, I found a [backup of the Virtual Tour website](http://virtualexpo2015.s3-website.eu-south-1.amazonaws.com/) which I thought was lost to time. I cannot exactly date back to when was this cloned (or more importantly, how), but it is incredible how someone is still paying to keep this wesbite up. To whoever did this, THANK YOU SO MUCH.
 
-The data I got from the website comes in fact from the backup. I somehow cannot get it working on Netlify as of now though, I'm still working on it.
-
+The data I got from the website comes in fact from the backup.
