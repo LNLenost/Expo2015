@@ -1,6 +1,5 @@
-# VirtualExpo (currently broken)
-The source code of the VirtualExpo website for EXPO 2015. 
-Accessible at https://virtualexpo2015.netlify.app
+# The EXPO 2015 unofficial repository
+This repository contains every single piece of digital media that's left from the EXPO 2015 event.
 
 # What the heck even is EXPO?
 From Wikipedia:
