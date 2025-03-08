@@ -1,0 +1,158 @@
+/* FLOORPLAN SPECIFIC SETTINGS */
+
+#floorPlanArea .kolorAreaContent {
+	margin: 0 auto !important;
+	padding: 0px 0px !important;
+	/*height: 265px !important;*/
+}
+
+#floorPlanArea .kolorArea {
+	top: 60px !important;
+	height: auto !important;
+}
+
+#floorPlanArea div.kolorAreaHeader {
+	margin: 5px 0px 0px 5px !important;
+}
+#floorPlanArea div.kolorAreaTitle {
+	background: url(../images/icons/ico_map_title.png) no-repeat;
+	background-size: 155px 31px;
+}
+
+.floorplanSwapBox {
+	left: 160px;
+	width: 50% !important;
+	line-height: 24px !important;
+}
+
+.floorplanDropDownArrow {
+	/*display: none !important;*/
+}
+
+.floorplanDropDownControl {
+	/*background-color: rgba(226, 1, 123, 0.7) !important;*/
+	color: #444 !important;
+	font-size: 16px !important;
+}
+
+.floorplanDropDownItemDiv {
+	background-color: rgba(255, 255, 255, 0.7) !important;
+	color: #000 !important;
+	padding-left: 30px !important;
+}
+
+.floorplanDropDownItemDiv:hover, .floorplanDropDownItemDiv.active {
+	background: url(../images/icons/arrow_right.png) no-repeat;
+	background-size: 28px;
+	background-position: center left;
+}
+
+.floorplanDropDownControl {
+	background: -webkit-linear-gradient(top,rgba(255,255,255,1),rgb(230,230,230));
+}
+
+.floorplanDropDownArrow {
+	height: 6px !important;
+}
+
+@media only screen and (max-width: 768px) {
+
+	#floorPlanArea .kolorArea {
+		/*width: 600px !important;
+		 height: 270px !important;*/
+	}
+
+	#floorPlanArea .kolorAreaContent {
+		width: 600px !important;
+		height: 250px !important;
+		margin: 0 auto !important;
+		padding: 0 !important;
+	}
+}
+
+@media only screen and (orientation: landscape) and (max-width: 768px) {
+
+	#floorPlanArea .kolorArea {
+		/*width: 80% !important;
+		 height: 80% !important;*/
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.floorplanSwapBox {
+		width: 220px !important;
+	}
+
+	div.floorplanContent {
+		height: auto !important;
+		width: auto !important;
+	}
+
+	#floorPlanArea .kolorArea {
+		width: 100% !important;
+		height: auto !important;
+		left: 0px !important;
+	}
+
+	#floorPlanArea .kolorAreaContent {
+		width: 100% !important;
+		height: 100% !important;
+		margin: 5px auto !important;
+		padding: 0 !important;
+	}
+}
+@media only screen and (max-width: 460px) {
+
+	.floorplanSwapBox {
+		width: 160px !important;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+
+	#floorPlanArea .kolorArea {
+		top: 40px !important;
+	}
+
+	.floorplanSwapBox {
+		width: 150px !important;
+		left: 155px;
+	}
+
+	#floorPlanArea .kolorArea {
+		width: 100% !important;
+		height: auto !important;
+		left: 0px !important;
+	}
+
+	#floorPlanArea .kolorAreaContent {
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+
+	.floorplanSwapBox {
+		width: 130px !important;
+		left: 140px;
+	}
+
+	#floorPlanArea div.kolorAreaTitle {
+		background-size: 145px 30px;
+	}
+
+	.floorplanDropDownItemDiv {
+		font-size: 14px !important;
+		padding-left: 24px !important;
+	}
+
+	.floorplanDropDownItemDiv:hover, .floorplanDropDownItemDiv.active {
+		background-size: 20px !important;;
+	}
+
+	.floorplanDropDownControl {
+		font-size: 14px !important;
+	}
+}
